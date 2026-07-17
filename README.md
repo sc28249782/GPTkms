@@ -96,6 +96,7 @@ Project knowledge should not automatically become global knowledge.
 - [src/gptkms_mcp/kms_store.py](src/gptkms_mcp/kms_store.py): file-backed storage and quality checks
 - [.codex/skills/kms-answer-from-wiki](.codex/skills/kms-answer-from-wiki): retrieval-first workflow skill
 - [.codex/skills/kms-promote-session-insights](.codex/skills/kms-promote-session-insights): promotion workflow skill
+- [.codex/skills/kms-save-session-to-kms](.codex/skills/kms-save-session-to-kms): workflow skill for preserving the current session into project KMS
 - [demo/index.html](demo/index.html): static browser demo for KMS-shaped content
 - [tests/browser-smoke.mjs](tests/browser-smoke.mjs): browser automation smoke test using Playwright
 
@@ -186,6 +187,16 @@ python scripts/validate_repo.py
 npm run browser:smoke
 npm run browser:demo
 ```
+
+## Saving session knowledge
+
+To preserve the current work into project memory:
+
+1. save a raw session summary
+2. update durable project pages
+3. promote only reusable knowledge into global memory
+
+You can use [scripts/save_session_to_kms.py](scripts/save_session_to_kms.py) to create the raw session source quickly.
 
 In Codex environments without `node` on PATH, replace the last command with:
 

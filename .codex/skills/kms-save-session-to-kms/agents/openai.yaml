@@ -1,0 +1,5 @@
+interface:
+  display_name: "KMS Save Session"
+  short_description: "Save the current session into project KMS"
+  default_prompt: "Use $kms-save-session-to-kms to save the current work session into the local GPTKMS project knowledge base."
+
