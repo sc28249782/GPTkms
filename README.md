@@ -86,6 +86,7 @@ Project knowledge should not automatically become global knowledge.
 - [docs/kms-schema-and-mcp-spec.md](E:\My Projects\GPTkms\docs\kms-schema-and-mcp-spec.md): implementation-oriented schema and tool contract
 - [docs/INSTALLATION.md](E:\My Projects\GPTkms\docs\INSTALLATION.md): installation and local run guide
 - [docs/ORIGIN_AND_DIRECTION.md](E:\My Projects\GPTkms\docs\ORIGIN_AND_DIRECTION.md): project background and design direction
+- [docs/PUBLISHING_CHECKLIST.md](E:\My Projects\GPTkms\docs\PUBLISHING_CHECKLIST.md): final steps for creating the GitHub repo and publishing
 - [docs/RELEASE_ROADMAP.md](E:\My Projects\GPTkms\docs\RELEASE_ROADMAP.md): proposed release path
 - [sample_kms](E:\My Projects\GPTkms\sample_kms): sample knowledge base for smoke tests
 - [src/gptkms_mcp/server.py](E:\My Projects\GPTkms\src\gptkms_mcp\server.py): MCP protocol and tool dispatch
