@@ -9,7 +9,7 @@ It follows a simple idea:
 - separate project memory from global memory
 - use skills to teach retrieval and promotion workflows
 
-The project is inspired by the LLM Wiki direction from Andrej Karpathy and the implementation ideas documented in thClaws.
+The project is inspired by the [LLM Wiki direction from Andrej Karpathy](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) and the implementation ideas documented in [thClaws](https://github.com/thClaws/thClaws).
 
 ## Why this exists
 
@@ -83,16 +83,16 @@ Project knowledge should not automatically become global knowledge.
 
 ## Included components
 
-- [docs/kms-schema-and-mcp-spec.md](E:\My Projects\GPTkms\docs\kms-schema-and-mcp-spec.md): implementation-oriented schema and tool contract
-- [docs/INSTALLATION.md](E:\My Projects\GPTkms\docs\INSTALLATION.md): installation and local run guide
-- [docs/ORIGIN_AND_DIRECTION.md](E:\My Projects\GPTkms\docs\ORIGIN_AND_DIRECTION.md): project background and design direction
-- [docs/PUBLISHING_CHECKLIST.md](E:\My Projects\GPTkms\docs\PUBLISHING_CHECKLIST.md): final steps for creating the GitHub repo and publishing
-- [docs/RELEASE_ROADMAP.md](E:\My Projects\GPTkms\docs\RELEASE_ROADMAP.md): proposed release path
-- [sample_kms](E:\My Projects\GPTkms\sample_kms): sample knowledge base for smoke tests
-- [src/gptkms_mcp/server.py](E:\My Projects\GPTkms\src\gptkms_mcp\server.py): MCP protocol and tool dispatch
-- [src/gptkms_mcp/kms_store.py](E:\My Projects\GPTkms\src\gptkms_mcp\kms_store.py): file-backed storage and quality checks
-- [.codex/skills/kms-answer-from-wiki](E:\My Projects\GPTkms\.codex\skills\kms-answer-from-wiki): retrieval-first workflow skill
-- [.codex/skills/kms-promote-session-insights](E:\My Projects\GPTkms\.codex\skills\kms-promote-session-insights): promotion workflow skill
+- [docs/kms-schema-and-mcp-spec.md](docs/kms-schema-and-mcp-spec.md): implementation-oriented schema and tool contract
+- [docs/INSTALLATION.md](docs/INSTALLATION.md): installation and local run guide
+- [docs/ORIGIN_AND_DIRECTION.md](docs/ORIGIN_AND_DIRECTION.md): project background and design direction
+- [docs/PUBLISHING_CHECKLIST.md](docs/PUBLISHING_CHECKLIST.md): final steps for creating the GitHub repo and publishing
+- [docs/RELEASE_ROADMAP.md](docs/RELEASE_ROADMAP.md): proposed release path
+- [sample_kms](sample_kms): sample knowledge base for smoke tests
+- [src/gptkms_mcp/server.py](src/gptkms_mcp/server.py): MCP protocol and tool dispatch
+- [src/gptkms_mcp/kms_store.py](src/gptkms_mcp/kms_store.py): file-backed storage and quality checks
+- [.codex/skills/kms-answer-from-wiki](.codex/skills/kms-answer-from-wiki): retrieval-first workflow skill
+- [.codex/skills/kms-promote-session-insights](.codex/skills/kms-promote-session-insights): promotion workflow skill
 
 ## Implemented MCP tools
 
@@ -125,7 +125,7 @@ Then run the MCP server:
   'E:\My Projects\GPTkms\scripts\run_server.py'
 ```
 
-For a fuller setup guide, see [docs/INSTALLATION.md](E:\My Projects\GPTkms\docs\INSTALLATION.md).
+For a fuller setup guide, see [docs/INSTALLATION.md](docs/INSTALLATION.md).
 
 ## Example Codex MCP config
 
@@ -158,12 +158,12 @@ Short version:
 - test against more than one real project
 - stabilize the public tool contract
 
-For the fuller release plan, see [docs/RELEASE_ROADMAP.md](E:\My Projects\GPTkms\docs\RELEASE_ROADMAP.md).
+For the fuller release plan, see [docs/RELEASE_ROADMAP.md](docs/RELEASE_ROADMAP.md).
 
 ## Contributing
 
-See [CONTRIBUTING.md](E:\My Projects\GPTkms\CONTRIBUTING.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
-[MIT](E:\My Projects\GPTkms\LICENSE)
+[MIT](LICENSE)
