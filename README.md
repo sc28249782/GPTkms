@@ -23,6 +23,18 @@ GPTkms tries to solve that by treating long-term memory as a maintained knowledg
 - cross-project
 - compatible with Codex workflows
 
+## Positioning
+
+GPTkms sits between simple persistent-memory tools and full personal knowledge systems.
+
+In practical terms:
+
+- it is more structured and curated than a flat memory layer
+- it is more operational and agent-facing than a second-brain app like Obsidian
+- it is built from Codex-native primitives such as MCP and skills, rather than replacing them
+
+For the longer comparison, see [docs/POSITIONING_AND_LANDSCAPE.md](docs/POSITIONING_AND_LANDSCAPE.md).
+
 ## Current status
 
 This repository is an early working prototype.
@@ -89,6 +101,7 @@ Project knowledge should not automatically become global knowledge.
 - [docs/INSTALLATION.md](docs/INSTALLATION.md): installation and local run guide
 - [docs/BROWSER_AUTOMATION.md](docs/BROWSER_AUTOMATION.md): Playwright and Chromium setup for repo-local browser automation
 - [docs/ORIGIN_AND_DIRECTION.md](docs/ORIGIN_AND_DIRECTION.md): project background and design direction
+- [docs/POSITIONING_AND_LANDSCAPE.md](docs/POSITIONING_AND_LANDSCAPE.md): how GPTkms differs from adjacent memory approaches
 - [docs/PUBLISHING_CHECKLIST.md](docs/PUBLISHING_CHECKLIST.md): final steps for creating the GitHub repo and publishing
 - [docs/RELEASE_ROADMAP.md](docs/RELEASE_ROADMAP.md): proposed release path
 - [sample_kms](sample_kms): sample knowledge base for smoke tests
