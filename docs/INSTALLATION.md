@@ -23,6 +23,22 @@ python scripts/smoke_test.py
 python scripts/run_server.py
 ```
 
+## Browser automation setup
+
+If you want the repo-local browser automation layer too:
+
+```powershell
+npm install
+npm run browser:install
+npm run browser:smoke
+```
+
+If you are inside Codex and `node` is not available on PATH, use:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\run_browser_smoke.ps1
+```
+
 ## Optional environment variables
 
 - `GPTKMS_ROOT`

@@ -34,6 +34,7 @@ Already implemented:
 - global and project scopes
 - search, read, write, ingest, promotion, lint, and conflict tools
 - two Codex workflow skills
+- Playwright-based browser automation scaffold
 - sample KMS content for testing
 
 Still in progress:
@@ -85,6 +86,7 @@ Project knowledge should not automatically become global knowledge.
 
 - [docs/kms-schema-and-mcp-spec.md](docs/kms-schema-and-mcp-spec.md): implementation-oriented schema and tool contract
 - [docs/INSTALLATION.md](docs/INSTALLATION.md): installation and local run guide
+- [docs/BROWSER_AUTOMATION.md](docs/BROWSER_AUTOMATION.md): Playwright and Chromium setup for repo-local browser automation
 - [docs/ORIGIN_AND_DIRECTION.md](docs/ORIGIN_AND_DIRECTION.md): project background and design direction
 - [docs/PUBLISHING_CHECKLIST.md](docs/PUBLISHING_CHECKLIST.md): final steps for creating the GitHub repo and publishing
 - [docs/RELEASE_ROADMAP.md](docs/RELEASE_ROADMAP.md): proposed release path
@@ -93,6 +95,7 @@ Project knowledge should not automatically become global knowledge.
 - [src/gptkms_mcp/kms_store.py](src/gptkms_mcp/kms_store.py): file-backed storage and quality checks
 - [.codex/skills/kms-answer-from-wiki](.codex/skills/kms-answer-from-wiki): retrieval-first workflow skill
 - [.codex/skills/kms-promote-session-insights](.codex/skills/kms-promote-session-insights): promotion workflow skill
+- [tests/browser-smoke.mjs](tests/browser-smoke.mjs): browser automation smoke test using Playwright
 
 ## Implemented MCP tools
 
@@ -127,6 +130,26 @@ Then run the MCP server:
 
 For a fuller setup guide, see [docs/INSTALLATION.md](docs/INSTALLATION.md).
 
+## Browser automation
+
+This repo now includes a small Playwright scaffold for browser automation.
+
+Quick commands:
+
+```powershell
+npm install
+npm run browser:install
+npm run browser:smoke
+```
+
+If `node` is not on PATH in Codex, use:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\run_browser_smoke.ps1
+```
+
+For details, see [docs/BROWSER_AUTOMATION.md](docs/BROWSER_AUTOMATION.md).
+
 ## Example Codex MCP config
 
 ```toml
@@ -147,6 +170,13 @@ Useful local checks:
 python -m py_compile src/gptkms_mcp/server.py src/gptkms_mcp/kms_store.py scripts/smoke_test.py
 python scripts/smoke_test.py
 python scripts/validate_repo.py
+npm run browser:smoke
+```
+
+In Codex environments without `node` on PATH, replace the last command with:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\run_browser_smoke.ps1
 ```
 
 ## Roadmap

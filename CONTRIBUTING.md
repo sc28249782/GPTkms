@@ -40,6 +40,13 @@ Recommended checks:
 python -m py_compile src/gptkms_mcp/server.py src/gptkms_mcp/kms_store.py scripts/smoke_test.py scripts/validate_repo.py
 python scripts/smoke_test.py
 python scripts/validate_repo.py
+npm run browser:smoke
+```
+
+If your environment does not expose `node` on PATH, use:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\run_browser_smoke.ps1
 ```
 
 ## Style
