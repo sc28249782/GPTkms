@@ -31,6 +31,7 @@ If you want the repo-local browser automation layer too:
 npm install
 npm run browser:install
 npm run browser:smoke
+npm run browser:demo
 ```
 
 If you are inside Codex and `node` is not available on PATH, use:

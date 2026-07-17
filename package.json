@@ -5,10 +5,10 @@
   "description": "Local-first KMS for Codex and ChatGPT Work with MCP and workflow skills.",
   "scripts": {
     "browser:smoke": "node tests/browser-smoke.mjs",
+    "browser:demo": "node tests/demo-browser.mjs",
     "browser:install": "playwright install chromium"
   },
   "devDependencies": {
     "playwright": "^1.55.0"
   }
 }
-

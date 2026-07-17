@@ -34,6 +34,16 @@ npm run browser:smoke
 
 This opens a simple in-memory page and verifies that Playwright can launch Chromium successfully.
 
+## Demo validation
+
+Run:
+
+```powershell
+npm run browser:demo
+```
+
+This opens the local `demo/index.html` page, runs a simple search flow, and verifies that KMS-shaped results render in the browser.
+
 If you are in a Codex runtime where `node` is not exposed on PATH, use:
 
 ```powershell

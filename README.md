@@ -35,6 +35,7 @@ Already implemented:
 - search, read, write, ingest, promotion, lint, and conflict tools
 - two Codex workflow skills
 - Playwright-based browser automation scaffold
+- browser-facing KMS demo page
 - sample KMS content for testing
 
 Still in progress:
@@ -95,6 +96,7 @@ Project knowledge should not automatically become global knowledge.
 - [src/gptkms_mcp/kms_store.py](src/gptkms_mcp/kms_store.py): file-backed storage and quality checks
 - [.codex/skills/kms-answer-from-wiki](.codex/skills/kms-answer-from-wiki): retrieval-first workflow skill
 - [.codex/skills/kms-promote-session-insights](.codex/skills/kms-promote-session-insights): promotion workflow skill
+- [demo/index.html](demo/index.html): static browser demo for KMS-shaped content
 - [tests/browser-smoke.mjs](tests/browser-smoke.mjs): browser automation smoke test using Playwright
 
 ## Implemented MCP tools
@@ -140,6 +142,7 @@ Quick commands:
 npm install
 npm run browser:install
 npm run browser:smoke
+npm run browser:demo
 ```
 
 If `node` is not on PATH in Codex, use:
@@ -149,6 +152,16 @@ powershell -ExecutionPolicy Bypass -File .\scripts\run_browser_smoke.ps1
 ```
 
 For details, see [docs/BROWSER_AUTOMATION.md](docs/BROWSER_AUTOMATION.md).
+
+## Demo
+
+The repository includes a small browser-facing demo at [demo/index.html](demo/index.html).
+
+It shows:
+
+- KMS-style entries with scope and citations
+- client-side search over project and global memory
+- a simple UI flow that Playwright can validate
 
 ## Example Codex MCP config
 
@@ -171,6 +184,7 @@ python -m py_compile src/gptkms_mcp/server.py src/gptkms_mcp/kms_store.py script
 python scripts/smoke_test.py
 python scripts/validate_repo.py
 npm run browser:smoke
+npm run browser:demo
 ```
 
 In Codex environments without `node` on PATH, replace the last command with:

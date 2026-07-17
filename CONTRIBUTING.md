@@ -41,6 +41,7 @@ python -m py_compile src/gptkms_mcp/server.py src/gptkms_mcp/kms_store.py script
 python scripts/smoke_test.py
 python scripts/validate_repo.py
 npm run browser:smoke
+npm run browser:demo
 ```
 
 If your environment does not expose `node` on PATH, use:
