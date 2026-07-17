@@ -1,0 +1,11 @@
+{
+  "project_id": "gptkms",
+  "attached_bases": [
+    "global",
+    "projects/gptkms"
+  ],
+  "write_policy": {
+    "global": "review",
+    "projects/gptkms": "auto"
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "KMS Promote Insights"
+  short_description: "Promote reusable memory into global KMS"
+  default_prompt: "Use $kms-promote-session-insights to promote reusable project insights into the global KMS with provenance."

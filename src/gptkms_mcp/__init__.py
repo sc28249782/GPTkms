@@ -1,0 +1,2 @@
+"""GPTKMS MCP prototype."""
+

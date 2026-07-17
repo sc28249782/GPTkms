@@ -1,0 +1,4 @@
+interface:
+  display_name: "KMS Answer From Wiki"
+  short_description: "Answer using the local KMS first"
+  default_prompt: "Use $kms-answer-from-wiki to answer from the local KMS before raw notes or general reasoning."
