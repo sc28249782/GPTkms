@@ -20,6 +20,8 @@ Prototype foundation:
 
 Memory maintenance:
 
+- generated JSON build from `sample_kms` for the demo layer
+- auto-distill session -> update pages -> optional promote workflow
 - merge/update flow for existing global pages
 - richer conflict detection
 - better link normalization
@@ -31,6 +33,7 @@ Memory maintenance:
 Packaging and distribution:
 
 - plugin wrapper around MCP + skills
+- demo and install flow bundled with the plugin-oriented wrapper
 - friendlier install flow
 - opinionated default KMS root bootstrap
 - starter templates for new projects
@@ -39,6 +42,9 @@ Packaging and distribution:
 
 Operational maturity:
 
+- Obsidian integration for second-brain workflows, with GPTkms managing an agent-memory subfolder or a synchronized curated layer
+- import/export flow between GPTkms and Obsidian vault structures
+- optional Obsidian URI helpers for creating, opening, or appending curated notes
 - CI validation matrix
 - regression fixtures for search and promotion
 - release notes and changelog discipline
@@ -61,15 +67,26 @@ Ship the public prototype repo with working docs and CI.
 
 ### Milestone B
 
-Prove reuse across at least two different projects.
+Prove reuse across at least two different projects and make session capture/promote workflows feel routine.
 
 ### Milestone C
 
-Package the system as a plugin-oriented distribution.
+Package the system as a plugin-oriented distribution with easier install and demo flows.
 
 ### Milestone D
 
+Add second-brain integrations such as Obsidian without weakening the core KMS model.
+
+### Milestone E
+
 Lock the public API and publish the first stable release.
+
+## Current priority order
+
+1. Replace hardcoded demo content with generated JSON derived from `sample_kms`.
+2. Automate the session flow: raw capture -> durable page updates -> optional promotion.
+3. Add a plugin wrapper that bundles MCP, skills, and easier install/demo flows.
+4. Add Obsidian integration as a second-brain layer on top of the stabilized KMS core.
 
 ## Open questions
 
@@ -77,4 +94,4 @@ Lock the public API and publish the first stable release.
 - How should global page merging behave when a page already exists?
 - What is the right default ranking logic for context packs across multiple bases?
 - Should raw source ingestion support structured metadata schemas from the start?
-
+- Should Obsidian integration share one vault directly, or synchronize only curated GPTkms memory into a dedicated subfolder?
